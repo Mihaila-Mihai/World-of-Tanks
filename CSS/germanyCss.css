@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import '../Stiluri/navigation.css';
+@import '../Stiluri/button.css';
+@import '../Stiluri/mediaQuerry.css';
+@import '../Stiluri/mobileMenu.css';
+@import '../Stiluri/overlay.css';
+@import '../Stiluri/main.css';
+@import '../Stiluri/Tabel.css';
+@import '../Stiluri/premium.css';
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    font-weight: 300;
+}
+
+.header__links {
+    position: relative;
+    right: 10rem;
+}
+
+.jc_c {
+    justify-content: center;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+.ta-j {
+    text-align: justify;
+}
+
+.noscroll {
+    overflow: hidden;
+}

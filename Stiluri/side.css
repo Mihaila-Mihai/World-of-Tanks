@@ -1,0 +1,73 @@
+.side a {
+    border-radius: 30px;
+    padding: 3px;
+    margin: 4px;
+    color: black;
+}
+
+.side a:hover {
+    background: linear-gradient(to top left, rgb(134, 64, 50), rgb(233, 223, 192));
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.side a:visited {
+    color: black;
+}
+
+.side a:visited:hover {
+    color: white;
+}
+
+.side ul,
+.side ol {
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    top: 1.125rem;
+}
+
+.side>ol ul {
+    visibility: hidden;
+}
+
+.side>ol:hover ul li {
+    animation: sideMenuApear 0.5s ease-in-out 0.2s forwards;
+}
+
+.side>ol:hover {
+    width: auto;
+    height: 21rem;
+}
+
+@keyframes sideMenuApear {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        top: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0.01;
+    }
+    50% {
+        visibility: visible;
+        opacity: 0.5;
+    }
+    60% {
+        visibility: visible;
+        opacity: 0.6;
+    }
+    90% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        top: 12.5rem;
+    }
+}

@@ -1,0 +1,18 @@
+button,
+.button {
+    padding: 0.875rem 2.1875rem;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(to top left, rgb(134, 64, 50), rgb(233, 223, 192));
+    color: rgb(0 0 0);
+    border: 0 solid gold;
+    font-weight: 400;
+    font-size: 0.875rem;
+    transition: opacity .3s ease-in-out, padding 200ms linear, border 100ms ease;
+}
+
+.button:hover {
+    opacity: 0.7;
+    padding: 0.875rem 2.3125rem;
+    border: 2px solid;
+}

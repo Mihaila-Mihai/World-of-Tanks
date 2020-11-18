@@ -1,0 +1,60 @@
+.mobile-menu {
+    position: absolute;
+    background: #f7f7f7;
+    width: calc(100% - 5rem);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.625rem;
+    border-radius: 10px;
+    margin-top: 1.6rem;
+    visibility: hidden;
+}
+
+.mobile-menu a {
+    color: darkblue;
+    padding: 0.625rem;
+    display: block;
+    text-align: center;
+    transition: 300ms;
+}
+
+.mobile-menu a:hover {
+    color: red;
+    transition: 300ms;
+}
+
+.mobile-menu a:active {
+    color: lime;
+}
+
+@keyframes slideInLeft {
+    from {
+        margin-left: -100%;
+        visibility: hidden;
+    }
+    to {
+        margin-left: 0%;
+        /* display: block;*/
+        visibility: visible;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        margin-left: 0%;
+        visibility: visible;
+    }
+    to {
+        margin-left: -100%;
+        /* display: none;*/
+        visibility: hidden;
+    }
+}
+
+.slideInMenu {
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.slideOutMenu {
+    animation: slideOutLeft 300ms ease-in-out forwards;
+}

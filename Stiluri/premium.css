@@ -1,0 +1,88 @@
+.tabel1 thead {
+    background-color: red;
+}
+
+.tabel1 tbody {
+    color: yellow;
+}
+
+.premium h2 {
+    text-align: center;
+}
+
+.premium h3 {
+    background-color: black;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.premium .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.premium .container2>div {
+    margin: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 19.0625rem;
+    width: 30.375rem;
+    transition: height 1s;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    flex-grow: 1;
+}
+
+.premium .container2 caption {
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+.tabel1 {
+    background-color: black;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    display: none;
+}
+
+.container2>div:hover {
+    height: 48.125rem;
+    transition: height 1s;
+}
+
+.container2>div:hover .tabel1 {
+    display: block;
+    animation: show-table 0.6s ease-in-out 1.3s forwards;
+}
+
+.container2>div:hover h3 {
+    opacity: 1;
+}
+
+.container2 table td:hover {
+    background-color: white;
+    color: black;
+}
+
+@keyframes show-table {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.premium .container2 .fw {
+    color: red;
+}

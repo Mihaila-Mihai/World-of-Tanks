@@ -1,0 +1,121 @@
+.table {
+    font-family: 'Roboto', sans-serif;
+}
+
+.table figure {
+    margin: 0;
+}
+
+.table figcaption {
+    text-align: center;
+}
+
+.td a var {
+    background: no-repeat url('https://tanks.gg/img/icons/td.png');
+}
+
+.td {
+    background-image: linear-gradient(#666, #414b90 30px);
+}
+
+.spg a var {
+    background: no-repeat url('https://tanks.gg/img/icons/spg.png');
+}
+
+.spg {
+    background-image: linear-gradient(#666, #793896 30px);
+}
+
+.ht a var {
+    background: no-repeat url('https://tanks.gg/img/icons/heavy.png');
+}
+
+.ht {
+    background-image: linear-gradient(#666, #7e2110 30px);
+}
+
+.mt a var {
+    background: no-repeat url('https://tanks.gg/img/icons/medium.png');
+}
+
+.mt {
+    background-image: linear-gradient(#666, #9d9204 30px);
+}
+
+.lt a var {
+    background: no-repeat url('https://tanks.gg/img/icons/light.png');
+}
+
+.lt {
+    background-image: linear-gradient(#666, #234610 30px);
+}
+
+.node a var {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -4px;
+    width: 27px;
+    height: 17px;
+}
+
+.node a {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 76%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.node a span {
+    position: relative;
+    top: 48px;
+    background: #000;
+    display: block;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #fff;
+}
+
+.node a em {
+    position: absolute;
+    right: 0;
+    bottom: 2em;
+    font-size: 10px;
+    color: #eee;
+    font-style: normal;
+    text-align: right;
+    padding-right: 13px;
+    background: 100% 50% no-repeat url('https://tanks.gg/img/icons/xp.png');
+}
+
+.node div {
+    position: relative;
+    height: 4rem;
+    width: 6rem;
+}
+
+.table {
+    overflow: auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.table img {
+    width: 6rem;
+    height: 3.625rem;
+}
+
+td {
+    margin: 10px;
+}
+
+table caption {
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+}

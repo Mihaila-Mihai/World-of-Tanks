@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import '../Stiluri/navigation.css';
+@import '../Stiluri/button.css';
+@import '../Stiluri/mobileMenu.css';
+@import '../Stiluri/overlay.css';
+@import '../Stiluri/side.css';
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.125em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    font-weight: 300;
+}
+
+h2 {
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.125rem;
+}
+
+.noscroll {
+    overflow: hidden;
+}
+
+.sec {
+    padding: 2.5rem;
+    text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+    .hide_for_mobile {
+        display: none;
+    }
+    .side {
+        display: none;
+    }
+    .picture {
+        text-align: center;
+    }
+    #nations,
+    #classes {
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery img {
+        width: 13.8rem;
+        height: auto;
+        margin: 2px;
+        transition: all 0.3s ease-in-out;
+    }
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 1px solid black;
+    }
+    .gallery img:hover {
+        width: 14rem;
+        height: auto;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hide_for_desktop {
+        display: none;
+    }
+    .grid {
+        display: grid;
+        grid-template-areas: 'header header header header' 'main main main side' 'main main main side' 'main main main side' 'main main main side' 'foot foot foot foot';
+        grid-gap: 0.2rem;
+    }
+    .header {
+        grid-area: header;
+    }
+    .main {
+        grid-area: main;
+        background-color: white;
+    }
+    .side {
+        grid-area: side;
+        background-color: rgba(236, 240, 241, 0.2);
+    }
+    .foot {
+        grid-area: foot;
+        background-color: rgba(236, 240, 241, 0.2);
+    }
+    #nations,
+    #classes {
+        display: flex;
+        justify-content: center;
+    }
+    .picture:not(:last-child) {
+        margin-right: 1rem;
+    }
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .gallery img {
+        width: 15rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .gallery img:hover {
+        width: 15.5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .tank img {
+        height: 4rem;
+        width: auto;
+    }
+}
+
+hr {
+    margin: 1rem;
+}
+
+.main section:nth-child(odd) {
+    background-color: rgba(236, 240, 241, 0.2);
+}
+
+#nations div:hover,
+#classes div:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#nations div,
+#classes div {
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.foot {
+    height: 4vh;
+    width: 98.9vw;
+}
+
+.foot p {
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Snell Roundhand, cursive';
+}
+
+figcaption {
+    text-align: center;
+}
