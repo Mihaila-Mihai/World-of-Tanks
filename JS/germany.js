@@ -144,7 +144,7 @@ window.onload = function() {
 
 function addP(text) {
     var firstParagraph = document.createElement('p');
-    firstParagraph.innerHTML = text;
+    firstParagraph.textContent = text;
     document.getElementsByTagName('form')[0].appendChild(firstParagraph);
 }
 
@@ -159,7 +159,7 @@ function addIn(type1, value1, name1, id1) {
 
 function addL(inner, for1) {
     var label1 = document.createElement('label');
-    label1.innerHTML = inner;
+    label1.textContent = inner;
     label1.setAttribute('for', for1);
     document.getElementsByTagName('form')[0].appendChild(label1);
 }
