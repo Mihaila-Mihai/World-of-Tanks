@@ -148,6 +148,11 @@ hr {
     transition: all 0.3s ease-in-out;
 }
 
+#nations>div,
+#classes>div {
+    flex: 1 1 150px;
+}
+
 #nations div,
 #classes div {
     transition: all 0.3s ease-in-out;
