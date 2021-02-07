@@ -1,0 +1,72 @@
+body {
+  height: 98vh;
+}
+
+span {
+  color: red;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto auto;
+  /* height: 700px; */
+  max-width: 722px;
+  position: relative;
+  top: 25%;
+  text-align: center;
+}
+
+.ext {
+  position: absolute;
+}
+
+.outer {
+  border: solid red 2px;
+  flex-grow: 1;
+  max-width: 132px;
+  margin: 20px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*transform: rotateY(180deg);*/
+  backface-visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+img {
+  height: 70px;
+}
+
+input {
+  width: 150px;
+  margin: auto auto;
+}
+
+#lead {
+  color: blue;
+  font-size: large;
+}
+
+table {
+  border: solid;
+  margin: auto 18%;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
+}
+
+table:nth-child(0) {
+  color: red;
+}
+
+#but1 {
+  position: absolute;
+  left: 15rem;
+}

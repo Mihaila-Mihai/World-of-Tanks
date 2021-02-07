@@ -40,3 +40,7 @@ p {
 .noscroll {
     overflow: hidden;
 }
+
+form {
+    display: none;
+}

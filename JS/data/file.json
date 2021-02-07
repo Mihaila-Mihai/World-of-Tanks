@@ -1,0 +1,19 @@
+[
+    { "picture": { "src": "../Imagini/Game/wot1.jpg", "caption": "KV-2" } },
+    { "picture": { "src": "../Imagini/Game/wot1.jpg", "caption": "KV-2" } },
+    { "picture": { "src": "../Imagini/Game/wot2.jpg", "caption": "Battle" } },
+    { "picture": { "src": "../Imagini/Game/wot2.jpg", "caption": "Battle" } },
+    { "picture": { "src": "../Imagini/Game/wot3.jpg", "caption": "Himmelsdorf" } },
+    { "picture": { "src": "../Imagini/Game/wot3.jpg", "caption": "Himmelsdorf" } },
+    { "picture": { "src": "../Imagini/Game/wot4.jpg", "caption": "Tundra" } },
+    { "picture": { "src": "../Imagini/Game/wot4.jpg", "caption": "Tundra" } },
+    { "picture": { "src": "../Imagini/Game/wot5.jpg", "caption": "Prokhorovka" } },
+    { "picture": { "src": "../Imagini/Game/wot5.jpg", "caption": "Prokhorovka" } },
+    { "picture": { "src": "../Imagini/Game/wot6.jpg", "caption": "Erlenberg" } },
+    { "picture": { "src": "../Imagini/Game/wot6.jpg", "caption": "Erlenberg" } },
+    { "picture": { "src": "../Imagini/Game/wot7.jpg", "caption": "Karelia" } },
+    { "picture": { "src": "../Imagini/Game/wot7.jpg", "caption": "Karelia" } },
+    { "picture": { "src": "../Imagini/Game/wot8.jpg", "caption": "Badger" } },
+    { "picture": { "src": "../Imagini/Game/wot8.jpg", "caption": "Badger" } }
+
+]

@@ -1,4 +1,5 @@
 window.onload = function() {
+    document.getElementById('meniu').className += ' hide_for_desktop';
     const button = document.getElementById('buttonF');
     const button2 = document.getElementById('set');
     const btnHamburger = document.getElementById('meniu');
@@ -6,6 +7,14 @@ window.onload = function() {
     const header = document.querySelector('.header');
     const overlay = document.querySelector('.overlay');
     const menuOverlay = document.querySelector('.mobile-menu');
+    const art = document.getElementsByTagName('article');
+
+    for (let i = 0; i < art.length; i++) {
+        art[i].addEventListener('click', function(event) {
+
+            event.target.style.visibility = 'hidden';
+        })
+    }
 
     btnHamburger.addEventListener('click', function() {
         console.log('click hamburger');
@@ -40,6 +49,7 @@ window.onload = function() {
 
 
 
+
     button.onclick = function() {
 
 
@@ -50,92 +60,18 @@ window.onload = function() {
         close.id = "closeB";
         document.getElementById('foot').appendChild(close);
 
+        var form = document.getElementsByTagName('form')[0];
+        form.style.display = 'block';
+
         close.onclick = function() {
             document.getElementById('foot').appendChild(button);
-            document.getElementById('foot').removeChild(form);
+            //document.getElementById('foot').removeChild(form);
             document.getElementById('foot').removeChild(close);
+            form.style.display = 'none';
 
         }
 
-        var form = document.createElement('form');
-        document.getElementById('foot').appendChild(form);
-
-        addP("Please select your gender:");
-
-        addIn('radio', 'male', 'gender', 'male');
-
-        addL('Male', 'male');
-
-
-
-        addBR();
-
-        addIn('radio', 'female', 'gender', 'female');
-
-        addL('Female', 'female');
-
-
-        addBR();
-
-        addIn('radio', 'other', 'gender', 'other');
-
-        addL('Other', 'other');
-
-        addBR();
-
-        addP('Please select your age:');
-
-        addIn('radio', '18', 'age', 'age1');
-
-        addL('0-18', 'age1');
-
-        addBR();
-
-        addIn('radio', '45', 'age', 'age2');
-
-        addL('19-45', 'age2');
-
-        addBR();
-
-        addIn('radio', 'more', 'age', 'age3');
-
-        addL('46 or more', 'age3');
-
-        addBR();
-
-        addP("Please select the page areas that you like");
-
-        addIn('checkbox', 'first', 'first', 'area1');
-
-        addL("Header", 'area1');
-
-        addBR();
-
-        addIn('checkbox', 'second', 'second', 'area2');
-
-        addL("Nation's presentation", 'area2');
-
-        addBR();
-
-        addIn('checkbox', 'third', 'third', 'area3');
-
-        addL('Tech tree', 'area3');
-
-        addBR();
-
-        addIn('checkbox', 'fourth', 'fourth', 'area4');
-
-        addL('Premium tanks', 'area4');
-
-        addBR();
-
-        addP('Whant to tell something?');
-
-        addIn('text', '');
-
-        addBR();
-
-        addIn('submit', 'Submit');
+        
 
 
     }
